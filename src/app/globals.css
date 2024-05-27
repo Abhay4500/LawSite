@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  /* --background-start-rgb: 214, 219, 220; */
+  --background-start-rgb: #fff;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+/* styles/FormGrid.module.css */
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.formGrid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGrid label {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.formGrid input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submitButton {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton input {
+  background-color: #886d37;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitButton input:hover {
+  background-color: #fff;
+  color: #886d37;
+  border: 1px solid #886d37;
+}
+
+
+/* Services */
+
+.text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.olClass{
+  padding-top:1rem ;
+  font-size: 18px;
+  /* font-weight: 600; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nestedOl li{
+  padding-left: 2rem;
+  /* list-style-type: disc; */
+}
