@@ -53,7 +53,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className={`sticky top-0 z-50 flex flex-col justify-center items-center w-full bg-white ${scrollY ? "shadow-md" : ""}`}>
           <h1 className=" h-14 mt-6 font-serif text-4xl">
-            Advocate Prince Verma & Associates
+          Advocate Kumar Laksya & Associates
           </h1>
           <div className="w-[1000px] h-[1px] bg-black mb-4"></div>
           <nav className="w-[550px] h-8">
@@ -89,7 +89,7 @@ export default function RootLayout({
           </nav>
         </div>
         {children}
-        <p className="text-sm font-serif font-thin text-center p-10">©2023 by Advocate Prince Verma & Associates.</p>
+        <p className="text-sm font-serif font-thin text-center p-10">©2023 by Advocate Kumar Laksya & Associates.</p>
       </body>
     </html>
   );

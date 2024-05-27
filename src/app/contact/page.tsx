@@ -7,7 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 
 const Contact = () => {
-    const iframeSrc = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa7EyH5n9mzkR54uXCYm6zJM&key=AIzaSyBdEcl5Loq-Ovedhjnx0ctsxbPu-y6Vwjw";
+    const iframeSrc = "https://www.google.com/maps/embed/v1/place?q=Goldline%20Residency%2CC404%2C%20Ayodhya%20road%2C%20Lucknow&key=AIzaSyBdEcl5Loq-Ovedhjnx0ctsxbPu-y6Vwjw";
 
     return (
         <div className='w-full'>
@@ -40,7 +40,8 @@ const Contact = () => {
                             <span>
                                 <CiLocationOn size={30} />
                             </span>
-                            <p className='text-lg font-serif font-thin'>Eldeco Greens, Gomti Nagar, Lucknow, Uttar Pradesh, India</p>
+                            <p className='text-lg font-serif font-thin'>Goldline Residency,C404, Ayodhya road, Lucknow
+                                Chamber Address: Advocates Hall Block-C,High Court, Lucknow.</p>
                         </div>
                         <div className='flex gap-6 items-center' >
                             <span>

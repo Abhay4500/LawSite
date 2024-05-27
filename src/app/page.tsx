@@ -3,14 +3,16 @@ import React, { useState } from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Form from '../../components/Form';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import FloatingWhatsAppButton from '../../components/FloaterWhatsapp';
+
 // import { sendMail } from './api/route';
 // import { sendMail } from './lib/mail';
 
 
 const slideImages: string[] = [
-  'images/1.jpg',
-  'images/2.jpg',
-  'images/3.jpg'
+  'images/IMG1.jpg',
+  'images/IMG5.jpg',
 ];
 export default function Home() {
 
@@ -33,7 +35,7 @@ export default function Home() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    const response = await fetch('/api/sendmail', {
+    const response = await fetch('/api/sendEmail', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -65,7 +67,7 @@ export default function Home() {
     <div className="min-h-screen py-2">
       <div className="w-full h-[600px] flex pl-[8rem] pr-[8rem] lg:pl-[8rem] lg:pr-[8rem] xl:pl-[20rem] xl:pr-[20rem] pt-24 gap-6 border-b-2 border-black">
         <div className="w-1/2 flex flex-col justify-center text-5xl font-serif">
-          Advocate Prince Verma & Associates Welcomes You
+          Advocate Kumar Laksya & Associates Welcomes You
           <span className=" font-sans text-xl"> <br />   Experience.   Respect.   Results.</span>
         </div>
         <div className="w-1/2" >
@@ -97,7 +99,8 @@ export default function Home() {
         <div className='p-9 w-[810px] h-[600px] bg-white'>
           <div className='w-full'>
             <h2 className='block text-3xl text-center font-serif font-extralight'>Get in Touch</h2>
-            <p className='mt-5 block text-center font-serif font-thin text-lg'>236, Eldeco Greens, Gomti Nagar, Lucknow, Uttar Pradesh, India
+            <p className='mt-5 block text-center font-serif font-thin text-lg'> Goldline Residency,C404, Ayodhya road, Lucknow
+              Chamber Address: Advocates Hall Block-C,High Court, Lucknow.
               <br />
               advpvassociates@gmail.com
               <br />
@@ -107,6 +110,7 @@ export default function Home() {
             <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
           </div>
         </div>
+        <FloatingWhatsAppButton/>
       </div>
       {/* <ReactImageGallery items={images} showNav={false}/> */}
       {/* <MyImageGallery/> */}
