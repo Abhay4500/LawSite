@@ -9,14 +9,14 @@ const slideImage = [
         caption: 'Advocate Syed Malik-e-Ashtar Rizvi Senior Advocate Experience - 21 yrs of legal practice'
     },
     {
-        url: 'images/IMG5.jpg',
-        caption: 'Slide 2'
+        url: 'images/IMG6.jpg',
+        caption: 'Advocate Kumar Lakshay'
     },
 ];
 
 const spanStyle: any = {
     position: "relative",
-    bottom: "-45%",
+    bottom: "-55%",
     padding: '20px',
     background: '#06273a',
     color: '#fffef8',
@@ -32,7 +32,7 @@ const spanStyle: any = {
   }
 const Team = () => {
     return (
-        <div className="w-full h-[800px] flex pl-[8rem] pr-[8rem] lg:pl-[8rem] lg:pr-[8rem] xl:pl-[20rem] xl:pr-[20rem] pt-24 gap-6 ">
+        <div className="w-full h-fit md:h-[800px] flex pl-2 pr-2 lg:pl-[8rem] lg:pr-[8rem] xl:pl-[20rem] xl:pr-[20rem] pt-24 gap-6 ">
             {/* <div className="w-1/3 flex flex-col justify-center text-5xl font-serif">
                 Advocate Prince Verma & Associates Welcomes You
                 <span className=" font-sans text-xl"> <br />   Experience.   Respect.   Results.</span>
@@ -45,7 +45,7 @@ const Team = () => {
                 >
                     {slideImage.map((slideImage, index) => (
                         <div key={index}>
-                            <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+                            <div className='div_style_team' style={{'backgroundImage': `url(${slideImage.url})` }}>
                                 <span className='w-full font-serif text-center h-[200px]' style={spanStyle}>{slideImage.caption}</span>
                             </div>
                         </div>

@@ -6,8 +6,8 @@ const Service: React.FC = () => {
       <h1 className='text text-5xl font-semibold text-center'>
         Our Services
       </h1>
-      <div className='w-full h-full flex bg px-20'>
-        <div className='w-1/2 p-8 bg-[#fff9ec]'>
+      <div className='w-full h-full flex flex-col md:flex-row lg:flex-row bg px-8- md:px-20 lg:px-20'>
+        <div className='w-full md:w-1/2 lg:w-1/2 p-8 bg-[#fff9ec]'>
           <h1 className='text text-4xl font-medium text-center'>Legal Services</h1>
           <ol className='olClass'>
             <li>
@@ -96,7 +96,7 @@ const Service: React.FC = () => {
           <ol className="olClass">15. Revenue Cases</ol>
           <ol className="olClass">16. Society Cases</ol>
         </div>
-        <div className='w-1/2 p-8 bg-[#fff9ec]'>
+        <div className='w-full md:w-1/2 lg:w-1/2 p-8 bg-[#fff9ec]'>
           <h1 className='text text-4xl font-medium text-center'>Para Legal Services</h1>
           <ol className='olClass'>
             <li>

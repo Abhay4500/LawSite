@@ -100,3 +100,36 @@ body {
   padding-left: 2rem;
   /* list-style-type: disc; */
 }
+
+.divStyle{
+  background-image: url("/images/judge.jpg");
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+}
+
+.div_style_team{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 600px
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .formGrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divStyle{
+    /* height: 1000px; */
+    height: fit-content;
+  background-image: none
+  }
+  .div_style_team{
+    height: 300px;
+  }
+}

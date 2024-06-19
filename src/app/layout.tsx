@@ -52,12 +52,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className={`sticky top-0 z-50 flex flex-col justify-center items-center w-full bg-white ${scrollY ? "shadow-md" : ""}`}>
-          <h1 className=" h-14 mt-6 font-serif text-4xl">
+          <h1 className=" text-center h-24 md:h-14 lg:h-14 mt-6 font-serif text-4xl">
           Advocate Kumar Laksya & Associates
           </h1>
-          <div className="w-[1000px] h-[1px] bg-black mb-4"></div>
-          <nav className="w-[550px] h-8">
-            <ul className="flex justify-between font-serif font-thin cursor-pointer">
+          <div className=" w-full md:w-[1000px] lg:w-[1000px] h-[1px] bg-black mb-4"></div>
+          <nav className="w-full md:w-[550px] lg:w-[550px] h-10">
+            <ul className="p-3 flex justify-between font-serif font-thin cursor-pointer">
               <li>
                 <Link href="/">
                   Home
