@@ -10,7 +10,7 @@ const slideImage = [
     },
     {
         url: 'images/IMG6.jpg',
-        caption: 'Advocate Kumar Lakshay'
+        caption: 'Advocate Kumar Laksya'
     },
 ];
 
